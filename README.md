@@ -48,49 +48,46 @@ _Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdow
 | web3    |Web Server |10.0.0.7   |Linux           |
 | ElkSer  | Elk Stack |10.1.0.4   |Linux           |
 
-- _TODO: Add whitelisted IP addresses_
 
-Machines within the network can only be accessed by _____.
-- _TODO: Which machine did you allow to access your ELK VM? What was its IP address?_
+
+Machines within the network can only be accessed by the jumpbox.
+- only the jump box can accpet network traffic from the internet. the only way to access it is from my personal workstaion.
 
 A summary of the access policies in place can be found in the table below.
 
 | Name     | Publicly Accessible | Allowed IP Addresses |
 |----------|---------------------|----------------------|
-| Jump Box | Yes/No              | 10.0.0.1 10.0.0.2    |
-|          |                     |                      |
-|          |                     |                      |
-|          |                     |                      |
-|          |                     |                      |
+| Jump Box | No                  | Home IP              |
+| web1     | No                  | 10.0.0.4             |
+| web2     | No                  | 10.0.0.4             |
+| web3     | No                  | 10.0.0.4             |
+| ElkSer   | No                  | 10.0.0.4             |
 ### Elk Configuration
 
-Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because...
-- _TODO: What is the main advantage of automating configuration with Ansible?_
-
+Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because
+it very simple to setup and use
 The playbook implements the following tasks:
-- _TODO: In 3-5 bullets, explain the steps of the ELK installation play. E.g., install Docker; download image; etc._
-- ...
-- ...
-
-The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
-
-![TODO: Update the path with the name of your screenshot of docker ps output](Images/docker_ps_output.png)
+installs docker,python3-pip,docker module for pip
+Setups systemctl
+downloads and lauches the elk container 
 
 ### Target Machines & Beats
 This ELK server is configured to monitor the following machines:
-- _TODO: List the IP addresses of the machines you are monitoring_
-
+web1 10.0.0.5
+web2 10.0.0.6
+web3 10.0.0.7
 We have installed the following Beats on these machines:
-- _TODO: Specify which Beats you successfully installed_
+Filebbeats
+Metricbeats
 
 These Beats allow us to collect the following information from each machine:
-- _TODO: In 1-2 sentences, explain what kind of data each beat collects, and provide 1 example of what you expect to see. E.g., `Winlogbeat` collects Windows logs, which we use to track user logon events, etc._
+Filebbeats- collects system logs witch can tracked and monitored.
 
 ### Using the Playbook
 In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned: 
 
 SSH into the control node and follow the steps below:
-- Copy the _____ file to _____.
+-Copy the filebeat and metricbeat config files to /etc/ansible//.
 - Update the _____ file to include...
 - Run the playbook, and navigate to ____ to check that the installation worked as expected.
 
