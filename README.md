@@ -45,13 +45,7 @@ _Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdow
 | Jump Box | Gateway  | 10.0.0.1   | Linux            |
 | Web-1    |          |            |                  |
 | TODO     |          |            |                  |
-| TODO     |          |            |                  |
-
-### Access Policies
-
-The machines on the internal network are not exposed to the public Internet. 
-
-Only the _____ machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:
+| ElkSer   |          |            |                  |
 - _TODO: Add whitelisted IP addresses_
 
 Machines within the network can only be accessed by _____.
