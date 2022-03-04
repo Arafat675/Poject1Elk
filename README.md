@@ -8,10 +8,11 @@ The files in this repository were used to configure the network depicted below.
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of theAnsible playbook files may be used to install only certain pieces of it, such as Filebeat.
 
-  [a link](https://github.com/Arafat675/Poject1Elk/blob/main/Ansible/filebeat-configuration.yml)
-  [a link](https://github.com/Arafat675/Poject1Elk/blob/main/Ansible/filebeat-playbook.yml)
-  [a link](https://github.com/Arafat675/Poject1Elk/blob/main/Ansible/metricbeat-configuration.yml)
-  [a link](https://github.com/Arafat675/Poject1Elk/blob/main/Ansible/metricbeat-playbook.yml)
+  [filebeat-playbook.yml](https://github.com/Arafat675/Poject1Elk/blob/main/Ansible/filebeat-playbook.yml)
+  [filebeat-configuration.yml](https://github.com/Arafat675/Poject1Elk/blob/main/Ansible/filebeat-configuration.yml)
+  [metricbeat-playbook.yml](https://github.com/Arafat675/Poject1Elk/blob/main/Ansible/metricbeat-playbook.yml)
+  [metricbeat-configuration.yml](https://github.com/Arafat675/Poject1Elk/blob/main/Ansible/metricbeat-configuration.yml)
+  
 This document contains the following details:
 - Description of the Topologu
 - Access Policies
