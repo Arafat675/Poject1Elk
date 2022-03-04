@@ -40,12 +40,13 @@ File Beat will monitor logs, collect logs and can forward them so they can be in
 The configuration details of each machine may be found below.
 _Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdown_tables) to add/remove values from the table_.
 
-| Name     | Function | IP Address | Operating System |
-|----------|----------|------------|------------------|
-| Jump Box | Gateway  | 10.0.0.1   | Linux            |
-| Web-1    |          |            |                  |
-| TODO     |          |            |                  |
-| ElkSer   |          |            |                  |
+|  Name |   |   |   |
+|---|---|---|---|
+| Web-1  |   |   |   |
+| Web-2	  |   |   |   |
+|  Web-3	 |   |   |   |
+|  ELK-server	 |   |   |   |
+|   |   |   |   |
 - _TODO: Add whitelisted IP addresses_
 
 Machines within the network can only be accessed by _____.
