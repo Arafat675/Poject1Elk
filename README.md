@@ -41,12 +41,12 @@ The configuration details of each machine may be found below.
 _Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdown_tables) to add/remove values from the table_.
 
 | Name  | Function  | IP Address  | Operating System |
-|---      |---        |---          |---                |
-|jumpbox  |           |             |                   |
-| web1    |           |             |                   |
-| web2    |           |             |                   |
-| web3    |           |             |                   |
-| ElkSer  |           |             |                   |
+|---      |---        |---        |---             |
+|jumpbox  |Gateway    |10.0.0.4   |Linux           |
+| web1    |Web Server |10.0.0.5   |Linux           |
+| web2    |Web Server |10.0.0.6   |Linux           |
+| web3    |Web Server |10.0.0.7   |Linux           |
+| ElkSer  | Elk Stack |10.1.0.4   |Linux           |
 
 - _TODO: Add whitelisted IP addresses_
 
