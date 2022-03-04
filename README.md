@@ -9,9 +9,13 @@ The files in this repository were used to configure the network depicted below.
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of theAnsible playbook files may be used to install only certain pieces of it, such as Filebeat.
 
   [filebeat-playbook.yml](https://github.com/Arafat675/Poject1Elk/blob/main/Ansible/filebeat-playbook.yml)
+  
   [filebeat-configuration.yml](https://github.com/Arafat675/Poject1Elk/blob/main/Ansible/filebeat-configuration.yml)
+  
   [metricbeat-playbook.yml](https://github.com/Arafat675/Poject1Elk/blob/main/Ansible/metricbeat-playbook.yml)
+  
   [metricbeat-configuration.yml](https://github.com/Arafat675/Poject1Elk/blob/main/Ansible/metricbeat-configuration.yml)
+  
   
 This document contains the following details:
 - Description of the Topologu
@@ -26,12 +30,12 @@ This document contains the following details:
 
 The main purpose of this network is to expose a load-balanced and monitored instance of DVWA, the D*mn Vulnerable Web Application.
 
-Load balancing ensures that the application will be highly _____, in addition to restricting _____ to the network.
-- _TODO: What aspect of security do load balancers protect? What is the advantage of a jump box?_
+Load balancing ensures that the application will have high availability, in addition to restricting the loadt to make a network more efficient.
+load balancers also can defelct DDoS attacks. Jump boxes are also a great option because they will prevent all the machines on a network from being exposed.
 
-Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the _____ and system _____.
-- _TODO: What does Filebeat watch for?_
-- _TODO: What does Metricbeat record?_
+Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the logs and system Traffic.
+File Beat will monitor logs, collect logs and can forward them so they can be indexed.
+ Metricbeat records metrics like cpu usage and other metric data.
 
 The configuration details of each machine may be found below.
 _Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdown_tables) to add/remove values from the table_.
@@ -39,7 +43,7 @@ _Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdow
 | Name     | Function | IP Address | Operating System |
 |----------|----------|------------|------------------|
 | Jump Box | Gateway  | 10.0.0.1   | Linux            |
-| TODO     |          |            |                  |
+| Web-1    |          |            |                  |
 | TODO     |          |            |                  |
 | TODO     |          |            |                  |
 
