@@ -92,9 +92,9 @@ setup.kibana:
 #-------------------------- Elasticsearch output ------------------------------
 output.elasticsearch:
   # Array of hosts to connect to.
-  hosts: ["10.0.0.12:9200"]
-  username: "elastic"
-  password: "changeme"
+  hosts: ["10.1.0.4:1200"]
+  username: "Elk-Ser"
+  password: "password"
 
   # Optional protocol and basic auth credentials.
   #protocol: "https"
